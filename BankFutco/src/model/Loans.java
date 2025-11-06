@@ -6,6 +6,8 @@ import java.time.LocalDate;
 public class Loans {
 	// Atributos
 	private LocalDate date;
+	
+
 	private String type; // e.g. "Home", "Vehicle", "Personal"
 	private BigDecimal totalLoan;
 	private BigDecimal amountPaid;
@@ -63,5 +65,12 @@ public class Loans {
 
 	public void setOutstandingAmt(BigDecimal outstandingAmt) {
 		this.outstandingAmt = outstandingAmt;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Loans [date=" + date + ", type=" + type + ", totalLoan=" + totalLoan + ", amountPaid=" + amountPaid
+				+ ", outstandingAmt=" + outstandingAmt + "]";
 	}
 }

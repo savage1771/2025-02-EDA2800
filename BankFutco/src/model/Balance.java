@@ -6,6 +6,8 @@ import java.time.LocalDate;
 public class Balance {
 	// Atributos
 	private LocalDate date;
+	
+
 	private String description;
 	private BigDecimal cashIn;
 	private BigDecimal cashOut;
@@ -63,5 +65,12 @@ public class Balance {
 
 	public void setClosingBalance(BigDecimal closingBalance) {
 		this.closingBalance = closingBalance;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Balance [date=" + date + ", description=" + description + ", cashIn=" + cashIn + ", cashOut=" + cashOut
+				+ ", closingBalance=" + closingBalance + "]";
 	}
 }

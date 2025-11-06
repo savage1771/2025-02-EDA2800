@@ -5,7 +5,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
 import model.Balance;
 
 public class BalanceRepository {
@@ -64,4 +63,12 @@ public class BalanceRepository {
 	public boolean existsById(LocalDate date) {
 		return storage.stream().anyMatch(b -> date != null && date.equals(b.getDate()));
 	}
+
+    public void create(Balance b) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void delete(String id) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }

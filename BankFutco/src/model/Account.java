@@ -24,7 +24,11 @@ public class Account {
 		this.address = address;
 	}
 
-	// Getters y setters
+	public Account(String id, String num, String name2, String email2, String mobile, String type, String address2) {
+        //TODO Auto-generated constructor stub
+    }
+
+    // Getters y setters
 	public String getAccountNumber() {
 		return accountNumber;
 	}

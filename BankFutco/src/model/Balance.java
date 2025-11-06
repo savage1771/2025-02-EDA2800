@@ -14,7 +14,7 @@ public class Balance {
 	private BigDecimal closingBalance;
 
 	// Constructor vacío
-	public Balance() {
+	public Balance(String id, double amount) {
 	}
 
 	// Constructor con todos los campos
